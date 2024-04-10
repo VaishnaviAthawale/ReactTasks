@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import User from "./Day-3/User";
+// import ChildrenDemo from "./Children";
+// // import UseState from "./Day4/UseState";
+// import Spread from "./Day4/Spread";
+// import Usestateadd from "./Day4/Usestateadd";
+import UseStateimg from "./Day4/UseStateimg";
+import NestA from "./Day5/NestA";
+import { createContext } from "react";
+import Counter from "./Day5/Counter";
+import Mergearr from "./Day5/Mergearr";
+import Img from "./Day5/Img";
+import AddArrayEle from "./Day5/Addarr";
+import State from "./mypracticse/State";
+import Functioneffect from "./Day6/Functioneffect";
+import Arryobj from "./Day6/Arryobj";
+import Fetchapi from "./Day6/Fetchapi";
+import setInterval from "./Day6/setInterval";
+
+
+
+
+
+
+export const NameContext = createContext()
 
 function App() {
+  const name ="vaishnavi";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+    <Img /> 
+     <Mergearr />
+    <AddArrayEle/>
+    <Counter />
+     <UseStateimg/>
+     <State />
+     <Functioneffect/>
+     <Arryobj/>
+     <Fetchapi/>
+     <setInterval/>
+     <NestA data={name}/>
+     </div>
+  )
 }
 
 export default App;
+
+
+
+
+          {/* <Usestateadd number1={5} number2={10} />
+          <ChildrenDemo/>
+           
+            <Spread /> */}
