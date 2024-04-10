@@ -15,7 +15,11 @@ import State from "./mypracticse/State";
 import Functioneffect from "./Day6/Functioneffect";
 import Arryobj from "./Day6/Arryobj";
 import Fetchapi from "./Day6/Fetchapi";
-import setInterval from "./Day6/setInterval";
+import setInterval from "./Day6/Clock";
+import SetTimeOut from "./Day6/SetTimeOut";
+import Clock from "./Day6/Clock";
+import localStorage from "./Day6/LocalStorage";
+import LocalStorage from "./Day6/LocalStorage";
 
 
 
@@ -37,7 +41,10 @@ function App() {
      <Functioneffect/>
      <Arryobj/>
      <Fetchapi/>
-     <setInterval/>
+     <Clock/>
+
+     <SetTimeOut/>
+    <LocalStorage/>
      <NestA data={name}/>
      </div>
   )
